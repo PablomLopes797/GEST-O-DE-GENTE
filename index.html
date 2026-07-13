@@ -69,6 +69,14 @@
         .file-input-label:hover { border-color: var(--primary); background: var(--gray-50); }
         #fileInput, #suricatoFileInput { display: none; }
 
+        .link-btn {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            padding: 0.6rem 1.2rem; background: var(--primary); color: white; border: none;
+            border-radius: var(--radius-sm); cursor: pointer; font-weight: 600; font-size: 0.9rem;
+            transition: 0.2s; text-decoration: none;
+        }
+        .link-btn:hover { background: var(--primary-light); box-shadow: var(--shadow); }
+
         .stats-bar {
             display: flex; gap: 1rem; padding: 0.75rem 2rem;
             background: white; border-bottom: 1px solid var(--gray-200); flex-wrap: wrap;
@@ -274,6 +282,7 @@
                 <label class="file-input-label" for="suricatoFileInput"><span>📁</span> Carregar CSV Suricato</label>
                 <input type="file" id="suricatoFileInput" accept=".csv">
                 <span id="suricatoFileName" style="color: var(--gray-500); font-size: 0.9rem;">Nenhum arquivo selecionado</span>
+                <a class="link-btn" id="suricatoLoginLink" href="https://suricato.corp.assai.com.br/scriptcase/app/suricato/frmlogin/frmlogin.php" target="_blank" rel="noopener noreferrer"><span>🔗</span> Acessar Suricato</a>
             </div>
         </div>
         <div class="stats-bar" id="suricatoStatsBar" style="display: none;">
